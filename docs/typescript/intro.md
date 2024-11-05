@@ -1,6 +1,5 @@
-Run the development server:
+---
+id: ts-recap
+title: Recap 
+---
 
-```bash
-cd my-website
-npm run start
-```
