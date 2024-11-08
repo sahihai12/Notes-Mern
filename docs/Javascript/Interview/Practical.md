@@ -234,3 +234,83 @@ call()
     .then(function first() {console.log(6)}); 
 
 ```
+
+
+### Reverse a string 
+
+```js 
+function reverseString(str) {
+    let reversed = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+    return reversed;
+}
+
+// Example
+console.log(reverseString("hello")); // Output: "olleh"
+
+```
+
+### Sum of n using recursion
+```js 
+function sumOfN(n) {
+    if (n <= 0) {
+        return 0;
+    }
+    return n + sumOfN(n - 1);
+}
+
+// Example
+console.log(sumOfN(5)); // Output: 15 (5 + 4 + 3 + 2 + 1)
+```
+
+### Find the character with the highest occurrence in a string
+
+```js 
+const str = "javascript";
+
+function maxCharOccurrence(str) {
+    const charCount = {};
+    let maxChar = '';
+    let maxCount = 0;
+
+    for (const char of str) {
+        charCount[char] = (charCount[char] || 0) + 1;
+        if (charCount[char] > maxCount) {
+            maxCount = charCount[char];
+            maxChar = char;
+        }
+    }
+    return { maxChar, maxCount };
+}
+
+// Example
+console.log(maxCharOccurrence(str)); // Output: { maxChar: 'a', maxCount: 2 }
+```
+
+
+### Group an array of objects by a specific key
+
+```js
+const items = [
+    { category: 'fruit', name: 'apple' },
+    { category: 'fruit', name: 'banana' },
+    { category: 'vegetable', name: 'carrot' },
+    { category: 'vegetable', name: 'spinach' }
+];
+
+function groupBy(array, key) {
+    return array.reduce((result, item) => {
+        const groupKey = item[key];
+        if (!result[groupKey]) {
+            result[groupKey] = [];
+        }
+        result[groupKey].push(item);
+        return result;
+    }, {});
+}
+
+// Example
+console.log(groupBy(items, 'category')); 
+```
