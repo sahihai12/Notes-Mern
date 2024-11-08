@@ -90,10 +90,8 @@
   display: flex;
 }
 
-[data-theme='dark']{
-  .hero ul img{
-    filter: invert(1);
-  } 
+[data-theme='dark'] .hero ul img{
+  filter: invert(1);
 }
 @media(min-width: 767px){
   .col-md-6{
@@ -117,8 +115,8 @@
   .hero p.hero__subtitle{
     font-size: 14px;
   }
-  
 }
+  
 .wrap-align{
   padding: 7px 0 35px 20px;
   border-left: 5px solid #e7a143;
