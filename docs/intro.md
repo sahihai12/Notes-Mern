@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+id: contect
+title: contect
 ---
 
 # Tutorial Intro
