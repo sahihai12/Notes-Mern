@@ -21,9 +21,6 @@ function HomepageHeader() {
             <Heading as="h1" className="hero__title">
               Hi! I<span className='p-color'>'m</span> Sahil
             </Heading>
-            <Heading as="h2" className="hero__sub__title">
-              
-            </Heading>
             <p className="hero__subtitle">
               Results-driven Software Engineer with 4+ years of experience specializing in the <b className='p-color'>MERN</b> stack (MongoDB, Express.js, React, Node.js). Proven track record in designing, developing, and deploying scalable web applications across eCommerce, learning management, and trip planning domains. Adept at leading frontend teams, building RESTful APIs, and optimizing performance. Skilled in handling full-stack development, database management, and cloud infrastructure (AWS).
             </p>
@@ -49,6 +46,11 @@ function HomepageHeader() {
                 <img src={codepen} alt="" />
               </Link></li>
             </ul>
+            <Link
+              className="btn-goto"
+              to="https://sahihai12.github.io/portfolio/">
+                My Portfolio 
+            </Link>
           </div>
           </div>
           <div className="col-md-6">
