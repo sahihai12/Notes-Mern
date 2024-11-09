@@ -76,7 +76,7 @@ const result = findMostFrequent(numbers);
 ```
 
 
-### Find ballance point
+### Find balance point
 > const arr = [1, 7, 3, 6, 5, 6] , [2, 2, 2, 2, 2, 2] , [1, 0, -1, 0 ], [0, -1, 1, 0 ],[2, 1, -1, 2, 1, -1, 2 ], [1, 2, 3, 4, 5]
 
 ```js title="Approach time-complexity O(n2)"
@@ -402,4 +402,61 @@ const groupBy = (array, key) => {
 
 const groupedByAge = groupBy(users, 'age');
 console.log(groupedByAge);
+```
+
+
+## Find Output
+
+```js
+const user = {
+  name: "John",
+  eat() {
+    console.log(this);
+    var eatFruit = () => {
+      console.log(this);
+    };
+    eatFruit();
+  },
+};
+user.eat();
+
+// 1: {name: "John", eat: f}, {name: "John", eat: f}
+// 2: Window {...}, Window {...}
+// 3: {name: "John", eat: f}, undefined
+// 4: {name: "John", eat: f}, Window {...}
+```
+
+```js
+function second() {
+  var message;
+  console.log(message);
+}
+
+function first() {
+  var message = "first";
+  second();
+  console.log(message);
+}
+
+var message = "default";
+first();
+console.log(message);
+
+// 1: undefined, first, default
+// 2: default, default, default
+// 3: first, first, default
+// 4: undefined, undefined, undefined
+```
+
+```js
+var of = ["of"];
+for (var of of of) {
+  console.log(of);
+}
+```
+
+```js
+console.log(null || 'myname')
+console.log(null && 'myname')
+console.log(null ?? 'myname')
 ```
