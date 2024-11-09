@@ -460,3 +460,52 @@ console.log(null || 'myname')
 console.log(null && 'myname')
 console.log(null ?? 'myname')
 ```
+
+```js
+add()
+var a  = 5;
+function add() {console.log(a) }
+```
+
+```js
+function call() {
+    return Promise.resolve();
+}
+call()
+    .then(function first() {console.log(1)})
+    .then(function first() {console.log(2)})
+    .then(function first() {console.log(3)});
+    
+call()
+    .then(function first() {console.log(4)})
+    .then(function first() {console.log(5)})
+    .then(function first() {console.log(6)});
+```
+
+```js
+const obj = {
+    name: 'sahil',
+    arrow : () => {return this.name},
+    inline : function(){return this.name}
+}
+
+
+console.log(obj.inline())
+console.log(obj.arrow())
+var x  = obj.inline
+console.log(x())
+
+```
+
+```js
+```
+
+```js
+```
+
+```js
+```
+
+```js
+```
+
