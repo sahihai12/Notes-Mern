@@ -56,17 +56,16 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {
-          href: 'https://github.com/sahihai12',
-          label: 'GitHub',
-          position: 'left',
-        },
+        {to: '/docs/javascript/getting-started', label: 'Javascript', position: 'left'},
+        {to: 'docs/react/getting-started-react', label: 'React.js', position: 'left'},
+        {to: '/docs/typescript/ts-installation', label: 'TypeScript', position: 'left'},
+        {to: '/docs/next-js/next-installation', label: 'Next.js', position: 'left'},
+        {to: '/docs/node-express/node-installation', label: 'Node.js', position: 'left'},
+        {to: 'docs/node-express/Express/express-why', label: 'Express.js', position: 'left'},
+        {to: '/docs/databases/MongoDB/mongo', label: 'Databases', position: 'left'},
+        {to: '/docs/Redis/redis', label: 'Redis', position: 'left'},
+        {to: '/docs/ElasticSearch/elasticsearch', label: 'ElasticSearch', position: 'left'},
+        {href: 'https://github.com/sahihai12',label: 'GitHub',position: 'right'},
       ],
     },
     footer: {

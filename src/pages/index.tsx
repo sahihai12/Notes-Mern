@@ -46,11 +46,11 @@ function HomepageHeader() {
                 <img src={codepen} alt="" />
               </Link></li>
             </ul>
-            <Link
+            {/* <Link
               className="btn-goto"
               to="https://sahihai12.github.io/portfolio/">
                 My Portfolio 
-            </Link>
+            </Link> */}
           </div>
           </div>
           <div className="col-md-6">
