@@ -58,8 +58,6 @@ const sidebars: SidebarsConfig = {
       dirName: '9.ElasticSearch', 
     },
   ],
-  
-  
 };
 
 export default sidebars;

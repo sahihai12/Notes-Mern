@@ -56,6 +56,7 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
+        {to: '/docs/Css/css-interview-questions', label: 'CSS', position: 'left'},
         {to: '/docs/javascript/getting-started', label: 'Javascript', position: 'left'},
         {to: 'docs/react/getting-started-react', label: 'React.js', position: 'left'},
         {to: '/docs/typescript/ts-installation', label: 'TypeScript', position: 'left'},
